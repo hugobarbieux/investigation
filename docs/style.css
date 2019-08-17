@@ -1,0 +1,66 @@
+*{box-sizing:border-box;}
+body{margin: 0;overflow: hidden;}
+html {scroll-behavior: smooth;overflow-x: hidden;}
+/**Le clear du div entre les dataviz**/
+.clear{clear:left;}
+/**Pour les iframe de Tableau**/
+iframe{width:100%!important;}
+.dataviz{text-align:center;}
+a,#up{-webkit-transition: all 0.4s linear 0s; -moz-transition: all 0.4s linear 0s; transition: all 0.4s linear 0s !important;}
+
+.stickytop{
+  background-color: #101010;
+  width: 100%;
+  height: 30px;
+  padding: 10px;
+}
+
+.logo{
+  float: right;
+  padding-right: 20px;
+}
+
+.introsection{
+  background-color: #101010;
+  height:100vh;
+  width: 100%;
+  display:table;
+  align-items:center;
+  overflow:hidden;
+}
+
+.introcontainer{
+  max-width: 100%;
+  margin: auto;
+  text-align: center;
+  overflow:hidden;
+}
+
+.headercontent{
+  z-index: 2;
+  display:table-cell;
+  vertical-align:middle;
+}
+
+.title{
+  font-family: Helvetica;
+  font-weight: bold;
+  color: #cb5a3c;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.introstyle{
+  font-family: Helvetica;
+  font-weight: bold;
+  color: #8f8079;
+}
+
+h5.title{
+  font-weight: normal;
+  padding-bottom: 10px;
+}
+
+.link{
+  color: teal;
+}

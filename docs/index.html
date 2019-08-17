@@ -21,55 +21,70 @@
     <title>Investigation Assignment</title>
 
   </head>
-
   <body>
 
-    <main role="main">
-
-      <!-- Main jumbotron for a primary marketing message or call to action -->
-      <div class="jumbotron">
-        <div class="container">
-          <h1 class="display-3">Investigate auditing development cooperation</h1>
-          <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-
-          <!-- This is the code for the countup + JS script below
-          See https://github.com/paulbradshaw/MED7373-Data-Journalism/blob/master/js/counter.md
-          and https://codepen.io/paulbradshaw/pen/ZXJGGY-->
-          <h2>Since the last ten years, the European union has spent <span id="money">148394944.67</span>€ in auditing development cooperation projects.
-          </h2>
-          <script>
-          var Total = 148394944.67;
-          var DividedBy = 1000;
-          var amountPerSecond = Total/DividedBy
-          //var amountPerSecond = 100000;
-          console.log("per second amount is "+amountPerSecond);
-
-          var runningTotal = 0;
-          document.getElementById('money').innerHTML = runningTotal;
-          //this function changes value by amount per second
-          function updateAmount(){
-            console.log("updateAmount running");
-            console.log(runningTotal);
-            runningTotal = runningTotal+amountPerSecond;
-            //insert runningTotal into page
-            document.getElementById('money').innerHTML = runningTotal;
-            document.getElementById('money').innerHTML = runningTotal.toLocaleString("en-GB",{maximumFractionDigits:2}); // display on page in HTML element with id="money"
-            //console.log("number is "+length(runningTotal));
-            if (runningTotal <=148394944.67){
-              console.log("if test");
-              setTimeout(updateAmount, ); //take a second then run function again
-            }
-            else {
-              console.log("else test");
-            }
-          }
-
-          updateAmount()
-          </script>
-
-          <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+      <nav class="stickytop">
+        <div>
+          <ul class=share>
+            <li>
+              <img src="img/investigation.png" height=50>
+              <a href="#"<img src="img/facebook.png"><img src="img/facebook.png" alt="Facebook" height=19 class="logo"></a>
+              <a href="http://twitter.com/share?text=See+how+the+main+audit+firms+dominate+DEVCO+projects+in+EU&url=https://hugobarbieux.github.io/investigation/&hashtags=investigation,datajournalism"><img src="img/twitter.png" alt="Twitter" height=20 class="logo"></a>
+            </li>
+          </ul>
         </div>
+      </nav>
+
+      <header class="introsection introcontainer">
+        <div class="headercontent">
+
+
+
+
+        <h1 class="title">Cooperation development Big4 monopoly</h1>
+        <!-- This is the code for the countup + JS script below
+        See https://github.com/paulbradshaw/MED7373-Data-Journalism/blob/master/js/counter.md
+        and https://codepen.io/paulbradshaw/pen/ZXJGGY-->
+        <h3 class="introstyle">In ten years, the EU spent </h3>
+        <h3 class="introstyle"><span id="money">148394944.67</span>€</h3>
+        <h3 class="introstyle">in auditing development cooperation projects</h3>
+        <script>
+        var Total = 148394944.67;
+        var DividedBy = 1000;
+        var amountPerSecond = Total/DividedBy
+        //var amountPerSecond = 100000;
+        console.log("per second amount is "+amountPerSecond);
+
+        var runningTotal = 0;
+        document.getElementById('money').innerHTML = runningTotal;
+        //this function changes value by amount per second
+        function updateAmount(){
+          console.log("updateAmount running");
+          console.log(runningTotal);
+          runningTotal = runningTotal+amountPerSecond;
+          //insert runningTotal into page
+          document.getElementById('money').innerHTML = runningTotal;
+          document.getElementById('money').innerHTML = runningTotal.toLocaleString("en-GB",{maximumFractionDigits:2}); // display on page in HTML element with id="money"
+          //console.log("number is "+length(runningTotal));
+          if (runningTotal <=148394944.67){
+            console.log("if test");
+            setTimeout(updateAmount, ); //take a second then run function again
+          }
+          else {
+            console.log("else test");
+          }
+        }
+
+        updateAmount()
+        </script>
+
+        <h5 class="title">But an overwhelming majority of transactions benefit to a few firms</h5>
+        <p class="link">By <a href="https://twitter.com/hugobarbieux" target="_blank">Hugo Barbieux</a><p>
+        <p class="lead">
+          <a href="#" class="btn btn-lg btn-secondary introstyle">Scroll down</a>
+        </p>
       </div>
+    </header>
 
       <div class="container">
         <!-- Example row of columns -->
@@ -90,12 +105,8 @@
             <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
           </div>
         </div>
-
-        <hr>
-
       </div> <!-- /container -->
 
-    </main>
 
     <footer class="container">
       <p>&copy; Hugo Barbieux 2019</p>
