@@ -25,7 +25,7 @@ a:active {
 
 .header{
   background-color: #101010;
-  height:5vh;
+  height:2vh;
   width: 100%;
   display:table;
   overflow:hidden;
@@ -88,12 +88,12 @@ figure:hover img{
 
 .title{
   font-family: tahoma;
-  line-height: 200%;
+  line-height: -50%;
   color: #cb5a3c;
 }
 
 .link{
-  line-height: 700%;
+  line-height: 200%;
   color: #4C90A0;
 }
 
