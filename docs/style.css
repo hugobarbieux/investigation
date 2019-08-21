@@ -1,6 +1,10 @@
 *{box-sizing:border-box;}
-body{margin: 0;overflow: hidden;}
-html {scroll-behavior: smooth;overflow-x: hidden;}
+body{margin: 0;
+}
+
+html {scroll-behavior: smooth;
+  overflow-x: hidden;
+}
 a,#up{-webkit-transition: all 0.4s linear 0s; -moz-transition: all 0.4s linear 0s; transition: all 0.4s linear 0s !important;}
 
 /* unvisited link */
@@ -23,7 +27,8 @@ a:active {
  color: #cb5a3c;
 }
 
-.header{
+/* where the 3 logos are nested */
+.social{
   background-color: #101010;
   height:2vh;
   width: 100%;
@@ -31,6 +36,7 @@ a:active {
   overflow:hidden;
 }
 
+/* the logos are .png images */
 .logo{
   position:relative;
   float: left;
@@ -57,9 +63,10 @@ figure:hover img{
   transform: scale(2.1)
 }
 
+/* first section/first page */
 .introsection{
   background-color: #101010;
-  height:100vh;
+  height:95vh;
   width: 100%;
   display:table;
   align-items:center;
@@ -97,7 +104,7 @@ figure:hover img{
   color: #4C90A0;
 }
 
-/* Arrow down */
+/* Arrow Scroll Down */
 .contain {
   padding-top: 3%;
   display: inline-block;
@@ -155,4 +162,73 @@ figure:hover img{
 @keyframes ring {
   0%, 100% {transform: scale(1,1); opacity:1}
   75% {transform: scale(1.2,1.2); opacity:0.4}
+}
+
+/*Section Two*/
+.section-two{
+  background-color: #fff;
+  height:100vh;
+  width: 100%;
+  display:table;
+  align-items:center;
+  overflow:hidden;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container-2 {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  margin: 3%;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #101010;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
 }
