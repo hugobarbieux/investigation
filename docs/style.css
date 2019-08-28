@@ -46,7 +46,7 @@ a:active {
 }
 
 .social-facebook{
-  position: relative;;
+  position: relative;
   float: right;
   height: 19px;
   top: -5px;
@@ -90,23 +90,22 @@ figure:hover img{
   font-family: tahoma;
   font-weight: bold;
   line-height: -50%;
-  color: #A68F85;
+  color: #A68F85; /*gray*/
 }
 
 .title{
   font-family: tahoma;
   line-height: -50%;
-  color: #cb5a3c;
+  color: #cb5a3c; /*red*/
 }
 
 .link{
-  line-height: 200%;
+  line-height: 400%;
   color: #4C90A0;
 }
 
 /* Arrow Scroll Down */
-.contain {
-  padding-top: 3%;
+.contain-scroll {
   display: inline-block;
   vertical-align: middle;
 }
@@ -164,71 +163,45 @@ figure:hover img{
   75% {transform: scale(1.2,1.2); opacity:0.4}
 }
 
-/*Section Two*/
-.section-two{
-  background-color: #fff;
+/*Map section*/
+.section-map {
+  align-items:center;
+  text-align: center;
+  background-color: #101010;
+  background-attachment: fixed;
   height:100vh;
   width: 100%;
-  display:table;
+  overflow: hidden;
+}
+
+/*Section three*/
+.section3 {
+  background-color: #101010;
+  height:100vh;
+  width: 100%;
   align-items:center;
   overflow:hidden;
+  padding-left: 20%;
+  padding-right:35%;
+  padding-top: 7%;
 }
 
-
-* {
-  box-sizing: border-box;
+.section3 p{
+  color: #A68F85;
 }
 
-/* Position the image container (needed to position the left and right arrows) */
-.container-2 {
-  position: relative;
+.sectionchart{
+  background-color: white;
+  height: 100vh;
+  padding-left: 5%;
+  padding-right:5%;
+  padding-top: 2%;
 }
 
-/* Hide the images by default */
-.mySlides {
-  display: none;
-  margin: 3%;
-}
-
-/* Add a pointer when hovering over the thumbnail images */
-.cursor {
-  cursor: pointer;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 40%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #101010;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
+.layer{width:100%;height:100%;}
+	#layerun{;}
+	#layerdeux{display: none;}
+	#layertrois{display: none;}
+  #layerquatre{display: none;}
+  #layercinq{display: none;}
+	select{width:200px;padding:5px;margin-bottom:25px;}

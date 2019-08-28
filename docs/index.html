@@ -20,7 +20,7 @@
  </head>
  <body>
     <!-- Up the first page with social network logos/links for sharing the page -->
-    <div class=social>
+    <div class="social">
       <img src="img/investigation.png" class=logo>
         <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fhugobarbieux.github.io%2Finvestigation%2F&amp;src=sdkpreparse" target="_blank"><figure><img src="img/facebook.png" alt="Facebook" class="social-facebook"></figure></a>
         <a href="http://twitter.com/share?text=See+how+the+main+accountancy+firms+dominate+DEVCO+projects+in+EU&url=https://hugobarbieux.github.io/investigation/&hashtags=investigation,datajournalism" target="_blank"><figure><img src="img/twitter.png" alt="Twitter" class="social-twitter"></figure></a>
@@ -65,102 +65,69 @@
 
             <h2 class="introstyle">in auditing development cooperation projects</h2>
               <h3 class="title">But an overwhelming majority of transactions benefit to a few accountancy firms</h3>
-                <p class="link">Story by <a href="https://twitter.com/hugobarbieux" target="_blank">Hugo Barbieux</a><p>
+                <p class="link">Story by <a href="https://twitter.com/hugobarbieux" target="_blank">Hugo Barbieux</a> Updated : August 2019</p>
 
             <!-- Arrow scroll down -->
-            <div class="contain">
-              <a href="#ancre"><p>Scroll down</p><span class="scroll-down-arrow"></span></a>
+            <div class="contain-scroll">
+              <a href="#scroll"><p>Scroll down</p><span class="scroll-down-arrow"></span></a>
             </div>
         </div>
    </header>
 
-   <!-- Sction two -->
-   <section class="section-two" id="ancre">
-     <!-- Container for the image gallery -->
-      <div class="container-2">
-          <!-- https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp -->
-          <div class="mySlides">
-            <div class="flourish-embed" data-src="visualisation/613081"></div><script src="https://public.flourish.studio/resources/embed.js"></script>
-          </div>
-          <div class="mySlides">
-            <div class="flourish-embed" data-src="visualisation/613081"></div><script src="https://public.flourish.studio/resources/embed.js"></script>
-          </div>
-          <div class="mySlides">
-            <div class="flourish-embed" data-src="visualisation/613081"></div><script src="https://public.flourish.studio/resources/embed.js"></script>
-          </div>
-          <!-- Next and previous buttons -->
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
-      </div>
-<script>
-      var slideIndex = 1;
-      showSlides(slideIndex);
+   <!-- Sction two/Map -->
 
-      // Next/previous controls
-      function plusSlides(n) {
-        showSlides(slideIndex += n);
-      }
-
-      // Thumbnail image controls
-      function currentSlide(n) {
-        showSlides(slideIndex = n);
-      }
-
-      function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("demo");
-        var captionText = document.getElementById("caption");
-        if (n > slides.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].className += " active";
-        captionText.innerHTML = dots[slideIndex-1].alt;
-      }
-</script>
-
-   </section>
-
-   <!-- Sction three -->
-   <section class="section-three">
-     <div class="container">
-       <!-- Example row of columns -->
-       <div class="row">
-          <div class="col-md-4">
-            <h2>Heading</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-          </div>
-          <div class="col-md-4">
-            <h2>Heading</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-          </div>
-          <div class="col-md-4">
-            <h2>Heading</h2>
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-          </div>
+   <section class="section-map" id="scroll">
+        <!-- World map -->
+        <div class="flourish-embed" data-src="visualisation/614073"></div><script src="https://public.flourish.studio/resources/embed.js"></script>
+        <!-- Arrow scroll down -->
+        <div class="contain-scroll">
+          <a href="#scroll-2"><p>Scroll down</p><span class="scroll-down-arrow"></span></a>
         </div>
-      </div> <!-- /container -->
    </section>
 
+   <section id="scroll-2" class="section3">
+     <div>
+         <p>There are several financial instruments used in this area for the current budget period (2014-2020), but the main one sits outside the EU budget and is the 11th European Development Fund (EDF - €30.5 billion), with contributions from EU countries. The EDF has its own procedures. We invite you to read more in the EDF-dedicated web page in DG DEVCO website.</p>
+         <p>Please note however that there are other instruments under the EU budget 2014-2020 which are also used for development cooperation, such as the Development Cooperation Instrument (€19.7 billion), the Instrument contributing to Stability and Peace (€2.3 billion) or the European Instrument for Democracy & Human Rights (€1.3 billion). You can find a summary in this DEVCO web page and their specific regulations in Eur-lex.</p>
+         <p>You can also get a good overview in the "2018 Annual Report on the implementation of the European Union's for financing external actions in 2017", in the associated Staff working document or in the summaries of EU legislation, under the "development" chapter.</p>
+      </div>
+
+   </section>
+
+   <!-- Section three/SLider -->
+
+   <section class="sectionchart">
+     <p>Select a country and see what are the five main audit firms chosen by the EU.
+       <select id="menu">
+         <option value="un">Honduras</option>
+         <option value="deux">Palestinian adm. Areas</option>
+         <option value="trois">South Africa</option>
+         <option value="quatre">Congo Rep. Dem.</option>
+         <option value="cinq">Iraq</option>
+       </select>
+     </p>
+
+          <div id="layerun" class="layer"><div class="flourish-embed" data-src="visualisation/613081"></div><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+          <div id="layerdeux" class="layer"><div class="flourish-embed" data-src="visualisation/613223"></div><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+          <div id="layertrois" class="layer"><div class="flourish-embed" data-src="visualisation/613201"></div><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+          <div id="layerquatre" class="layer"><div class="flourish-embed" data-src="visualisation/613271"></div><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+          <div id="layercinq" class="layer"><div class="flourish-embed" data-src="visualisation/613260"></div><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+          <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+          		<script>
+          			$(document).ready(function(){
+          				$('#menu').on('change', function(){
+          					var valeur = $(this).val();
+          					$("div.layer").hide();
+          					$("#layer"+valeur).fadeIn();
+          				});
+          			});
+          		</script>
+    </section>
 
     <!-- footer copyright -->
     <footer class="container">
-      <p>&copy; Hugo Barbieux 2019</p>
+        <p>&copy; Hugo Barbieux 2019</p>
     </footer>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>
