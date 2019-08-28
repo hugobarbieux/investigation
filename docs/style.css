@@ -106,7 +106,7 @@ figure:hover img{
 
 /* Arrow Scroll Down */
 .contain-scroll {
-  position: relative;
+  position: absolute;
   font-size: 1em;
   display: inline-block;
   vertical-align: middle;
@@ -167,13 +167,11 @@ figure:hover img{
 
 /*Map section*/
 .section-map {
-  background-color: black;
+  background-color: #101010;
   height:100vh;
   width: 100%;
-  overflow: hidden;
-  text-align: center;
-  position: absolute;
   bottom: 0;
+  text-align: center;
 }
 
 /*Section three*/
