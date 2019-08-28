@@ -89,7 +89,6 @@ figure:hover img{
 
 .introstyle{
   font-family: tahoma;
-  font-size: 200%;
   font-weight: bold;
   line-height: -50%;
   color: #A68F85; /*gray*/
@@ -97,12 +96,10 @@ figure:hover img{
 
 .title{
   font-family: tahoma;
-  font-size: 150%;
   color: #cb5a3c; /*red*/
 }
 
 .link{
-  font-size: 80%;
   line-height: 400%;
   color: #4C90A0;
 }
@@ -111,7 +108,7 @@ figure:hover img{
 .contain-scroll {
   font-size: 1em;
   display: inline-block;
-  vertical-align: middle;
+  bottom: 10px;
 }
 
 .scroll-down-arrow {
