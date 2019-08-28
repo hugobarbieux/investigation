@@ -5,6 +5,7 @@ body{margin: 0;
 html {scroll-behavior: smooth;
   overflow-x: hidden;
 }
+
 a,#up{-webkit-transition: all 0.4s linear 0s; -moz-transition: all 0.4s linear 0s; transition: all 0.4s linear 0s !important;}
 
 /* unvisited link */
@@ -88,6 +89,7 @@ figure:hover img{
 
 .introstyle{
   font-family: tahoma;
+  font-size: 2vw;
   font-weight: bold;
   line-height: -50%;
   color: #A68F85; /*gray*/
@@ -95,17 +97,19 @@ figure:hover img{
 
 .title{
   font-family: tahoma;
-  line-height: -50%;
+  font-size: 1.5vw;
   color: #cb5a3c; /*red*/
 }
 
 .link{
+  font-size: 1vw;
   line-height: 400%;
   color: #4C90A0;
 }
 
 /* Arrow Scroll Down */
 .contain-scroll {
+  font-size: 1em;
   display: inline-block;
   vertical-align: middle;
 }
