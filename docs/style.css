@@ -89,7 +89,7 @@ figure:hover img{
 
 .introstyle{
   font-family: tahoma;
-  font-size: 2vw;
+  font-size: 2em;
   font-weight: bold;
   line-height: -50%;
   color: #A68F85; /*gray*/
@@ -97,12 +97,12 @@ figure:hover img{
 
 .title{
   font-family: tahoma;
-  font-size: 1.5vw;
+  font-size: 1.5em;
   color: #cb5a3c; /*red*/
 }
 
 .link{
-  font-size: 1vw;
+  font-size: 1em;
   line-height: 400%;
   color: #4C90A0;
 }
