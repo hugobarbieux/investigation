@@ -104,7 +104,8 @@ figure:hover img{
 .contain {
   padding-top: 3%;
   display: inline-block;
-  vertical-align: middle bottom;
+  vertical-align: middle;
+  margin:auto;
 }
 
 .scroll-down-arrow {
