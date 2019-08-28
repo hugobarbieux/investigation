@@ -179,8 +179,7 @@ figure:hover img{
   height:auto;
   width: 100%;
   overflow:hidden;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding: 2%;
 }
 
 .section3 p{
@@ -190,7 +189,8 @@ figure:hover img{
 .sectionchart{
   background-color: white;
   height: 100vh;
-  padding: 3%;
+  padding-top: 3%;
+  padding-right: 2%;
 }
 
 .layer{width:100%;height:100%;}
