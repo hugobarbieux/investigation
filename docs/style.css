@@ -199,4 +199,23 @@ figure:hover img{
 	#layertrois{display: none;}
   #layerquatre{display: none;}
   #layercinq{display: none;}
+  #layersix{display: none;}
+  #layersept{display: none;}
+  #layerhuit{display: none;}
+  #layerneuf{display: none;}
+  #layerdix{display: none;}
+  #layeronze{display: none;}
+  #layerdouze{display: none;}
+  #layertreize{display: none;}
+  #layerquatorze{display: none;}
+  #layerquinze{display: none;}
+
+
 	select{width:200px;padding:5px;margin-bottom:25px;}
+
+  .sectionbump{
+    background-color: white;
+    height: 100vh;
+    padding-top: 3%;
+    padding-right: 2%;
+  }
