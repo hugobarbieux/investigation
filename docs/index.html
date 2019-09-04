@@ -28,50 +28,52 @@
 
     <!-- First page/welcoming page with the hook, countup and invite to scroll down -->
     <header class="introsection introcontainer">
-        <div class="headercontent">
-          <!-- This is the code for the countup + JS script below
-          See https://github.com/paulbradshaw/MED7373-Data-Journalism/blob/master/js/counter.md
-          and https://codepen.io/paulbradshaw/pen/ZXJGGY-->
-          <h2 class="introstyle">In ten years, the EU spent </h2>
-          <h2 class="introstyle"><span id="money">148394944.67</span>€</h2>
-            <script>
-              var Total = 148394944.67;
-              var DividedBy = 1000;
-              var amountPerSecond = Total/DividedBy
-              //var amountPerSecond = 100000;
-              console.log("per second amount is "+amountPerSecond);
+        <!--<div class="headercontainer"> &lt;!&ndash;modif&ndash;&gt;-->
+            <div class="headercontent">
+                <!-- This is the code for the countup + JS script below
+                See https://github.com/paulbradshaw/MED7373-Data-Journalism/blob/master/js/counter.md
+                and https://codepen.io/paulbradshaw/pen/ZXJGGY-->
+                <h2 class="introstyle">In ten years, the EU spent </h2>
+                <h2 class="introstyle"><span id="money">148394944.67</span>€</h2>
+                <script>
+					        var Total = 148394944.67;
+					        var DividedBy = 1000;
+					        var amountPerSecond = Total/DividedBy
+					        //var amountPerSecond = 100000;
+					        console.log("per second amount is "+amountPerSecond);
 
-              var runningTotal = 0;
-              document.getElementById('money').innerHTML = runningTotal;
-              //this function changes value by amount per second
-              function updateAmount(){
-                console.log("updateAmount running");
-                console.log(runningTotal);
-                runningTotal = runningTotal+amountPerSecond;
-                //insert runningTotal into page
-                document.getElementById('money').innerHTML = runningTotal;
-                document.getElementById('money').innerHTML = runningTotal.toLocaleString("en-GB",{maximumFractionDigits:2}); // display on page in HTML element with id="money"
-                //console.log("number is "+length(runningTotal));
-                if (runningTotal <=148394944.67){
-                  console.log("if test");
-                  setTimeout(updateAmount, ); //take a second then run function again
-                }
-                else {
-                  console.log("else test");
-                }
-              }
-              updateAmount()
-            </script>
+					        var runningTotal = 0;
+					        document.getElementById('money').innerHTML = runningTotal;
+					        //this function changes value by amount per second
+					        function updateAmount(){
+						        console.log("updateAmount running");
+						        console.log(runningTotal);
+						        runningTotal = runningTotal+amountPerSecond;
+						        //insert runningTotal into page
+						        document.getElementById('money').innerHTML = runningTotal;
+						        document.getElementById('money').innerHTML = runningTotal.toLocaleString("en-GB",{maximumFractionDigits:2}); // display on page in HTML element with id="money"
+						        //console.log("number is "+length(runningTotal));
+						        if (runningTotal <=148394944.67){
+							        console.log("if test");
+							        setTimeout(updateAmount, ); //take a second then run function again
+						        }
+						        else {
+							        console.log("else test");
+						        }
+					        }
+					        updateAmount()
+                </script>
 
-            <h2 class="introstyle">in auditing development cooperation projects</h2>
-              <h3 class="title">But an overwhelming majority of transactions benefit to a few accountancy firms</h3>
+                <h2 class="introstyle">in auditing development cooperation projects</h2>
+                <h3 class="title">But an overwhelming majority of transactions benefit to a few accountancy firms</h3>
                 <p class="link">Story by <a href="https://twitter.com/hugobarbieux" target="_blank">Hugo Barbieux</a> Updated : August 2019</p>
 
-            <!-- Arrow scroll down -->
-            <div class="contain-scroll">
-              <a href="#scroll"><p>Scroll down</p><span class="scroll-down-arrow"></span></a>
+                <!-- Arrow scroll down -->
+                <div class="contain-scroll">
+                    <a href="#scroll"><p>Scroll down</p><span class="scroll-down-arrow"></span></a>
+                </div>
             </div>
-        </div>
+        <!--</div>-->
    </header>
 
    <!-- Sction two/Map -->
