@@ -28,6 +28,12 @@ a:active {
  color: #cb5a3c;
 }
 
+h5 {
+  text-align: center;
+  font-style: italic;
+  padding: 5%;
+}
+
 /* where the 3 logos are nested */
 .social{
   background-color: #101010;
@@ -185,14 +191,24 @@ figure:hover img{
 /*Section three*/
 .section3 {
   background-color: #101010;
-  height:auto;
+  height: 100%;
   width: 100%;
   overflow:hidden;
   padding: 2%;
+  margin-bottom: 5%;
 }
 
 .section3 p{
   color: #A68F85;
+  font-size: 120%;
+}
+
+.section4 {
+  margin-top: 5%
+  height:auto;
+  width: 100%;
+  overflow:hidden;
+  padding: 2%;
 }
 
 .sectionchart{
@@ -200,6 +216,10 @@ figure:hover img{
   height: 100vh;
   padding-top: 3%;
   padding-right: 2%;
+}
+
+.sectionchart p{
+  font-weight: bold;
 }
 
 .layer{width:100%;height:100%;}
@@ -222,12 +242,22 @@ figure:hover img{
 
 	select{width:200px;padding:5px;margin-bottom:25px;}
 
-  .sectionbump{
+.sectionbump{
     background-color: white;
-    height: 100vh;
+    height: auto;
     padding-top: 3%;
     padding-right: 2%;
+    margin-bottom: 2%;
   }
+
+.sectionfooter{
+  position: relative;
+  width: 100%;
+  height: 50px;
+  padding: 3%;
+  background-color: lightgray;
+}
+
 /* mosid RESPONSIVE FOR MOBILE*/
   @media(max-width: 800px){
     .headercontent .introstyle{
