@@ -16,10 +16,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <title>Investigation Assignment</title>
+
  </head>
  <body>
     <!-- Up the first page with social network logos/links for sharing the page -->
-    <div class=social>
+    <div class="social">
       <img src="img/investigation.png" class=logo>
         <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fhugobarbieux.github.io%2Finvestigation%2F&amp;src=sdkpreparse" target="_blank"><figure><img src="img/facebook.png" alt="Facebook" class="social-facebook"></figure></a>
         <a href="http://twitter.com/share?text=See+how+the+main+accountancy+firms+dominate+DEVCO+projects+in+EU&url=https://hugobarbieux.github.io/investigation/&hashtags=investigation,datajournalism" target="_blank"><figure><img src="img/twitter.png" alt="Twitter" class="social-twitter"></figure></a>
@@ -27,110 +28,141 @@
 
     <!-- First page/welcoming page with the hook, countup and invite to scroll down -->
     <header class="introsection introcontainer">
-        <div class="headercontent">
-          <!-- This is the code for the countup + JS script below
-          See https://github.com/paulbradshaw/MED7373-Data-Journalism/blob/master/js/counter.md
-          and https://codepen.io/paulbradshaw/pen/ZXJGGY-->
-          <h2 class="introstyle">In ten years, the EU spent </h2>
-          <h2 class="introstyle"><span id="money">148394944.67</span>€</h2>
-            <script>
-              var Total = 148394944.67;
-              var DividedBy = 1000;
-              var amountPerSecond = Total/DividedBy
-              //var amountPerSecond = 100000;
-              console.log("per second amount is "+amountPerSecond);
+        <!--<div class="headercontainer"> &lt;!&ndash;modif&ndash;&gt;-->
+            <div class="headercontent">
+                <!-- This is the code for the countup + JS script below
+                See https://github.com/paulbradshaw/MED7373-Data-Journalism/blob/master/js/counter.md
+                and https://codepen.io/paulbradshaw/pen/ZXJGGY-->
+                <h2 class="introstyle">In ten years, the EU spent </h2>
+                <h2 class="introstyle"><span id="money">148394944.67</span>€</h2>
+                <script>
+					        var Total = 148394944.67;
+					        var DividedBy = 1000;
+					        var amountPerSecond = Total/DividedBy
+					        //var amountPerSecond = 100000;
+					        console.log("per second amount is "+amountPerSecond);
 
-              var runningTotal = 0;
-              document.getElementById('money').innerHTML = runningTotal;
-              //this function changes value by amount per second
-              function updateAmount(){
-                console.log("updateAmount running");
-                console.log(runningTotal);
-                runningTotal = runningTotal+amountPerSecond;
-                //insert runningTotal into page
-                document.getElementById('money').innerHTML = runningTotal;
-                document.getElementById('money').innerHTML = runningTotal.toLocaleString("en-GB",{maximumFractionDigits:2}); // display on page in HTML element with id="money"
-                //console.log("number is "+length(runningTotal));
-                if (runningTotal <=148394944.67){
-                  console.log("if test");
-                  setTimeout(updateAmount, ); //take a second then run function again
-                }
-                else {
-                  console.log("else test");
-                }
-              }
-              updateAmount()
-            </script>
+					        var runningTotal = 0;
+					        document.getElementById('money').innerHTML = runningTotal;
+					        //this function changes value by amount per second
+					        function updateAmount(){
+						        console.log("updateAmount running");
+						        console.log(runningTotal);
+						        runningTotal = runningTotal+amountPerSecond;
+						        //insert runningTotal into page
+						        document.getElementById('money').innerHTML = runningTotal;
+						        document.getElementById('money').innerHTML = runningTotal.toLocaleString("en-GB",{maximumFractionDigits:2}); // display on page in HTML element with id="money"
+						        //console.log("number is "+length(runningTotal));
+						        if (runningTotal <=148394944.67){
+							        console.log("if test");
+							        setTimeout(updateAmount, ); //take a second then run function again
+						        }
+						        else {
+							        console.log("else test");
+						        }
+					        }
+					        updateAmount()
+                </script>
 
-            <h2 class="introstyle">in auditing development cooperation projects</h2>
-              <h3 class="title">But an overwhelming majority of transactions benefit to a few accountancy firms</h3>
-                <p class="link">Story by <a href="https://twitter.com/hugobarbieux" target="_blank">Hugo Barbieux</a><p>
+                <h2 class="introstyle">in auditing development cooperation projects</h2>
+                <h3 class="title">But an overwhelming majority of transactions benefit to a few accountancy firms</h3>
+                <p class="link">Story by <a href="https://twitter.com/hugobarbieux" target="_blank">Hugo Barbieux</a> Updated : August 2019</p>
 
-            <!-- Arrow scroll down -->
-            <div class="contain">
-              <a href="#ancre"><p>Scroll down</p><span class="scroll-down-arrow"></span></a>
+                <!-- Arrow scroll down -->
+                <div class="contain-scroll">
+                    <a href="#scroll"><p>Scroll down</p><span class="scroll-down-arrow"></span></a>
+                </div>
             </div>
-        </div>
+        <!--</div>-->
    </header>
 
-   <!-- Sction two -->
-   <section class="section-two" id="ancre">
-     <div class="container">
-       <!-- Example row of columns -->
-       <div class="row">
-          <div class="col-md-4">
-            <h2>Heading</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-          </div>
-          <div class="col-md-4">
-            <h2>Heading</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-          </div>
-          <div class="col-md-4">
-            <h2>Heading</h2>
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-          </div>
-        </div>
-      </div> <!-- /container -->
+   <!-- Sction two/Map -->
+
+   <section class="section-map" id="scroll">
+       <!-- World map -->
+       <div class="flourish-embed" data-src="visualisation/614073"></div><script src="https://public.flourish.studio/resources/embed.js"></script>
+       <!-- Arrow scroll down -->
+       <div class="contain-scroll"><a href="#scroll-2"><p>Scroll down</p><span class="scroll-down-arrow"></span></a></div>
    </section>
 
-   <!-- Sction three -->
-   <section class="section-three">
-     <div class="container">
-       <!-- Example row of columns -->
-       <div class="row">
-          <div class="col-md-4">
-            <h2>Heading</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-          </div>
-          <div class="col-md-4">
-            <h2>Heading</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-          </div>
-          <div class="col-md-4">
-            <h2>Heading</h2>
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-          </div>
-        </div>
-      </div> <!-- /container -->
+   <section id="scroll-2" class="section3">
+     <div class="row">
+ 			<div class="col-md-2"></div>
+ 		  <div class="col-md-7">
+ 				 <p>There are several financial instruments used in this area for the current budget period (2014-2020), but the main one sits outside the EU budget and is the 11th European Development Fund (EDF - €30.5 billion), with contributions from EU countries.
+         <p>The EDF has its own procedures. We invite you to read more in the EDF-dedicated web page in DG DEVCO website.</p>
+         <p>Please note however that there are other instruments under the EU budget 2014-2020 which are also used for development cooperation, such as the Development Cooperation Instrument (€19.7 billion), the Instrument contributing to Stability and Peace (€2.3 billion) or the European Instrument for Democracy & Human Rights (€1.3 billion).</p>
+         <p>You can find a summary in this DEVCO web page and their specific regulations in Eur-lex.</p>
+         <p>You can also get a good overview in the "2018 Annual Report on the implementation of the European Union's for financing external actions in 2017", in the associated Staff working document or in the summaries of EU legislation, under the "development" chapter.</p>
+ 			</div>
+ 		</div>
    </section>
 
+   <!-- Section three/SLider -->
+
+   <section class="sectionchart">
+     <div class="row">
+       <div class="col-md-1"></div>
+       <div class="col-md-11">
+         <p>In this list, you may find countries where at least a million euros have been spent in audit.</p>
+         <p>Click on them and see to which firms went the ten most worthy contracts.
+           <select id="menu">
+             <option value="un">Honduras</option>
+             <option value="deux">Palestinian adm. Areas</option>
+             <option value="trois">South Africa</option>
+             <option value="quatre">Congo Rep. Dem.</option>
+             <option value="cinq">Iraq</option>
+             <option value="six">Liberia</option>
+             <option value="sept">Russia</option>
+             <option value="huit">Kazakhstan</option>
+             <option value="neuf">Central African Rep.</option>
+             <option value="dix">Guinea</option>
+             <option value="onze">Afghanistan</option>
+             <option value="douze">Pakistan</option>
+             <option value="treize">Burkina Faso</option>
+             <option value="quatorze">Kenya</option>
+             <option value="quinze">Cameroon</option>
+           </select>
+       </p>
+     </div>
+   </div>
+
+          <div id="layerun" class="layer"><div class="flourish-embed" data-src="visualisation/613081"></div><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+          <div id="layerdeux" class="layer"><div class="flourish-embed" data-src="visualisation/613223"></div><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+          <div id="layertrois" class="layer"><div class="flourish-embed" data-src="visualisation/613201"></div><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+          <div id="layerquatre" class="layer"><div class="flourish-embed" data-src="visualisation/613271"></div><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+          <div id="layercinq" class="layer"><div class="flourish-embed" data-src="visualisation/613260"></div><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+          <div id="layersix" class="layer"><div class="flourish-embed" data-src="visualisation/630389"></div><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+          <div id="layersept" class="layer"><div class="flourish-embed" data-src="visualisation/630398"></div><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+          <div id="layerhuit" class="layer"><div class="flourish-embed" data-src="visualisation/630407"></div><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+          <div id="layerneuf" class="layer"><div class="flourish-embed" data-src="visualisation/630415"></div><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+          <div id="layerdix" class="layer"><div class="flourish-embed" data-src="visualisation/630430"></div><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+          <div id="layeronze" class="layer"><div class="flourish-embed" data-src="visualisation/630437"></div><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+          <div id="layerdouze" class="layer"><div class="flourish-embed" data-src="visualisation/630448"></div><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+          <div id="layertreize" class="layer"><div class="flourish-embed" data-src="visualisation/630459"></div><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+          <div id="layerquatorze" class="layer"><div class="flourish-embed" data-src="visualisation/630465"></div><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+          <div id="layerquinze" class="layer"><div class="flourish-embed" data-src="visualisation/630482"></div><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+
+          <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+          		<script>
+          			$(document).ready(function(){
+          				$('#menu').on('change', function(){
+          					var valeur = $(this).val();
+          					$("div.layer").hide();
+          					$("#layer"+valeur).fadeIn();
+          				});
+          			});
+          		</script>
+    </section>
+
+    <section class="sectionbump">
+      <div class="flourish-embed" data-src="visualisation/631660"></div><script src="https://public.flourish.studio/resources/embed.js"></script>
+    </section>
 
     <!-- footer copyright -->
     <footer class="container">
-      <p>&copy; Hugo Barbieux 2019</p>
+        <p>&copy; Hugo Barbieux 2019</p>
     </footer>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>
