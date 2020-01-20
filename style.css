@@ -1,6 +1,11 @@
 *{box-sizing:border-box;}
-body{margin: 0;overflow: hidden;}
-html {scroll-behavior: smooth;overflow-x: hidden;}
+body{margin: 0;
+}
+
+html {scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
 a,#up{-webkit-transition: all 0.4s linear 0s; -moz-transition: all 0.4s linear 0s; transition: all 0.4s linear 0s !important;}
 
 /* unvisited link */
@@ -23,6 +28,12 @@ a:active {
  color: #cb5a3c;
 }
 
+h5 {
+  text-align: center;
+  font-style: italic;
+  padding: 5%;
+}
+
 /* where the 3 logos are nested */
 .social{
   background-color: #101010;
@@ -42,7 +53,7 @@ a:active {
 }
 
 .social-facebook{
-  position: relative;;
+  position: relative;
   float: right;
   height: 19px;
   top: -5px;
@@ -74,6 +85,7 @@ figure:hover img{
   margin: auto;
   text-align: center;
   overflow:hidden;
+  padding:30px; /* modif */
 }
 
 .headercontent{
@@ -82,30 +94,34 @@ figure:hover img{
   vertical-align:middle;
 }
 
+/*.headercontainer{*/
+  /*max-width: 1024px;*/
+  /*height: auto;*/
+  /*margin: 0 auto;*/
+/*}*/
+
 .introstyle{
   font-family: tahoma;
   font-weight: bold;
   line-height: -50%;
-  color: #A68F85;
+  color: #A68F85; /*gray*/
 }
 
 .title{
   font-family: tahoma;
-  line-height: -50%;
-  color: #cb5a3c;
+  color: #cb5a3c; /*red*/
 }
 
 .link{
-  line-height: 200%;
+  line-height: 400%;
   color: #4C90A0;
 }
 
 /* Arrow Scroll Down */
-.contain {
-  padding-top: 3%;
+.contain-scroll {
+  font-size: 1em;
   display: inline-block;
   vertical-align: middle;
-  margin:auto;
 }
 
 .scroll-down-arrow {
@@ -161,12 +177,99 @@ figure:hover img{
   75% {transform: scale(1.2,1.2); opacity:0.4}
 }
 
-/*Section Two*/
-.section-two{
+/*Map section*/
+.section-map {
   background-color: #101010;
   height:100vh;
   width: 100%;
-  display:table;
-  align-items:center;
-  overflow:hidden;
+  bottom: 0;
+  text-align: center;
 }
+
+
+
+/*Section three*/
+.section3 {
+  background-color: #101010;
+  height: 100%;
+  width: 100%;
+  overflow:hidden;
+  padding: 2%;
+  margin-bottom: 5%;
+}
+
+.section3 p{
+  color: #A68F85;
+  font-size: 120%;
+}
+
+.section4 {
+  margin-top: 5%
+  height:auto;
+  width: 100%;
+  overflow:hidden;
+  padding: 2%;
+}
+
+.sectionchart{
+  background-color: white;
+  height: 100vh;
+  padding-top: 3%;
+  padding-right: 2%;
+}
+
+.sectionchart p{
+  font-weight: bold;
+}
+
+.layer{width:100%;height:100%;}
+	#layerun{;}
+	#layerdeux{display: none;}
+	#layertrois{display: none;}
+  #layerquatre{display: none;}
+  #layercinq{display: none;}
+  #layersix{display: none;}
+  #layersept{display: none;}
+  #layerhuit{display: none;}
+  #layerneuf{display: none;}
+  #layerdix{display: none;}
+  #layeronze{display: none;}
+  #layerdouze{display: none;}
+  #layertreize{display: none;}
+  #layerquatorze{display: none;}
+  #layerquinze{display: none;}
+
+
+	select{width:200px;padding:5px;margin-bottom:25px;}
+
+.sectionbump{
+    background-color: white;
+    height: auto;
+    padding-top: 3%;
+    padding-right: 2%;
+    margin-bottom: 2%;
+  }
+
+.sectionfooter{
+  position: relative;
+  width: 100%;
+  height: 50px;
+  padding: 3%;
+  background-color: lightgray;
+}
+
+/* mosid RESPONSIVE FOR MOBILE*/
+  @media(max-width: 800px){
+    .headercontent .introstyle{
+      font-size: 1.5rem;
+    }
+    .headercontent .title{
+      font-size: 1rem;
+    }
+    .section-map .flourish-embed {
+      height: 80vh;
+    }
+    .section3 .row, .sectionchart .row{
+      padding: 0 15px;
+    }
+  }
