@@ -20,7 +20,7 @@ a:visited {
 
 /* mouse over link */
 a:hover {
- color: #cb5a3c;
+ color: #4C90A0;
 }
 
 /* selected link */
@@ -47,7 +47,7 @@ h5 {
 .logo{
   position:relative;
   float: left;
-  height: 50px;
+  height: 100px;
   top: 5px;
   left: 5px;
 }
@@ -120,7 +120,6 @@ figure:hover img{
 /* Arrow Scroll Down */
 .contain-scroll {
   font-size: 1em;
-  display: inline-block;
   vertical-align: middle;
 }
 
@@ -135,9 +134,9 @@ figure:hover img{
   animation-timing-function: cubic-bezier(.14, .75, .2, 1.01);
   border-left: 10px solid transparent;
 	border-right: 10px solid transparent;
-	border-top: 14px solid #f2f2f2;
+	border-top: 10px solid #f2f2f2;
   content: "";
-  position: relative;
+  position: static;
 }
 
 .button.scroll:before {
@@ -186,26 +185,24 @@ figure:hover img{
   text-align: center;
 }
 
-
-
 /*Section three*/
 .section3 {
   background-color: #101010;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   overflow:hidden;
-  padding: 2%;
+  padding: 6%;
   margin-bottom: 5%;
 }
 
 .section3 p{
   color: #A68F85;
-  font-size: 120%;
+  font-size: 100%;
 }
 
 .section4 {
   margin-top: 5%
-  height:auto;
+  height: 100vh;
   width: 100%;
   overflow:hidden;
   padding: 2%;
@@ -213,7 +210,7 @@ figure:hover img{
 
 .sectionchart{
   background-color: white;
-  height: 100vh;
+  height: 100%;
   padding-top: 3%;
   padding-right: 2%;
 }
